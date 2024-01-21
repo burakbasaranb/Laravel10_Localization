@@ -201,7 +201,7 @@ class Localization
 }
 ```
 
-This middleware checks the session for a stored `locale` value. If found and it's a valid language code, it sets the application locale `using App::setLocale($locale)`. If not found, it defaults to the value specified in the configuration (`config('app.locale')`).
+This middleware checks the session for a stored `locale` value. If found and it's a valid language code, it sets the application locale `using App::setLocale($locale)`.
 
 ### Step 3: Register Middleware
 
