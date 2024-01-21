@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// 2. Way
 Route::get('/', function () {
     return view('welcome');
 });
 
 /**
- * 1. Way
+ * 2. Way
  * This route is used for changing the language
  * Keep in Session the selected language
  */
@@ -29,7 +30,7 @@ Route::get('language/{locale}', function ($locale) {
 });
 
 /*
- * 2. Way
+ * 1. Way
  * This route is get the current locale in the url
  * http://127.0.0.1:8000/tr
  * 
